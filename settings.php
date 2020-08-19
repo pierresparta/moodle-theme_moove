@@ -133,6 +133,15 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
+    // Variable $navbar-bg-footer.
+    // We use an empty default value because the default colour should come from the preset.
+    $name = 'theme_moove/navbarbgfooter';
+    $title = get_string('navbarbgfooter', 'theme_moove');
+    $description = get_string('navbarbgfooter_desc', 'theme_moove');
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, '');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
     // Course format option.
     $name = 'theme_moove/coursepresentation';
     $title = get_string('coursepresentation', 'theme_moove');

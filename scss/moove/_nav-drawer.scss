@@ -148,7 +148,7 @@
 }
 
 #nav-drawer[aria-hidden=true] .list-group-item {
-    display: inherit;
+    display: block;
 }
 
 #nav-drawer.closed {
@@ -247,8 +247,9 @@
     left: 5px;
     bottom: 0;
     margin: 0 -5px;
-    background-color: $navbar-bg-hover;
+    background-color: $navbar-bg-footer;
     width: 70px;
+    z-index: 1000;
 
     #themesettings-control {
         padding: .75rem 0;
@@ -281,19 +282,7 @@ body.drawer-open-left #nav-drawer-footer {
 
     body.drawer-open-left {
         #nav-drawer-footer {
-            width: 70px;
             display: block;
-
-            #themesettings-control {
-                .text {
-                    display: none;
-                }
-            }
         }
-    }
-
-    .metismenu [data-key="course-sections"],
-    .metismenu [data-key="mycourses"] {
-        display: none;
     }
 }

@@ -44,7 +44,6 @@ body.coursepresentation-cover {
                     margin: 0;
 
                     .mod-indent-outer {
-                        padding-left: 0;
                         display: block;
                     }
                 }
@@ -371,4 +370,12 @@ body#page-mod-quiz-attempt.pagelayout-secure {
         background-color: #95a5a6;
         color: #95a5a6;
     }
+}
+
+.editing .section .activity .contentwithoutlink, .editing .section .activity .activityinstance{
+    padding-right: 150px;
+}
+
+.section .activity .contentafterlink {
+    margin-bottom: 1rem;
 }

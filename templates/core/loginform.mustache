@@ -119,34 +119,15 @@
 
         <div class="row">
             <div class="col-md-7 instructions">
-                <h2>{{sitename}}</h2>
+                <h2>Institut Notre-Dame d'Arlon</h2>
                 <hr align="left" />
 
-                <div class="m-t-1">
-                    <i class="fa fa-check-circle-o"></i>
-                    {{#str}} cookiesenabled {{/str}}
-                    {{{cookieshelpiconformatted}}}
-                </div>
-
-                {{#canloginasguest}}
-                    <div class="m-t-2">
-                        <p><i class="fa fa-user-circle-o"></i> {{#str}}someallowguest{{/str}}</p>
-                        <form action="{{loginurl}}" method="post" id="guestlogin">
-                            <input type = "hidden" name = "logintoken" value = "{{logintoken}}">
-                            <input type="hidden" name="username" value="guest" />
-                            <input type="hidden" name="password" value="guest" />   
-                            <input type="hidden" name="logintoken" value="{{logintoken}}">
-                            <button class="btn btn-secondary" type="submit">{{#str}}loginguest{{/str}}</button>
-                        </form>
-                    </div>
-                {{/canloginasguest}}
-
+                <p>Si vous êtes à l'INDA, vous possédez un compte mail scolaire. Cliquez sur le bouton ci-dessous et introduisez votre adresse mail scolaire, ainsi que son mot de passe&nbsp;:</p>
                 {{#hasidentityproviders}}
-                    <h3 class="m-t-1">{{#str}} potentialidps, auth {{/str}}</h3>
-                    <div class="potentialidplist" class="m-t-1">
+                    <div class="potentialidplist mt-3">
                         {{#identityproviders}}
                             <div class="potentialidp">
-                                <a href="{{{url}}}" title={{#quote}}{{name}}{{/quote}} class="btn btn-secondary">
+                                <a href="{{{url}}}" title={{#quote}}{{name}}{{/quote}} class="btn btn-secondary btn-block">
                                     {{#iconurl}}
                                         <img src="{{iconurl}}" alt="" width="24" height="24"/>
                                     {{/iconurl}}
@@ -156,13 +137,12 @@
                         {{/identityproviders}}
                     </div>
                 {{/hasidentityproviders}}
+                <p class="mt-3">En cas d'oubli du mot de passe de l'adresse mail scolaire, adressez-vous au service informatique de l'école. Pour d'autres soucis, adressez-vous à un gestionnaire de la plateforme via l'adresse <a class="text-white" href=mailto:manager@indarlon.be>manager@indarlon.be</a>.
+                        {{#str}} cookiesenabled {{/str}}
+                        {{{cookieshelpiconformatted}}}
+                </p>
+                <p>Les parents souhaitant un accès POS peuvent écrire à un gestionnaire via l'adresse <a class="text-white" href=mailto:manager@indarlon.be>manager@indarlon.be</a>.</p>
 
-                {{^hasidentityproviders}}
-                    {{#hasinstructions}}
-                        <h3 class="m-t-1">{{#str}}firsttime{{/str}}</h3>
-                        <div>{{{instructions}}}</div>
-                    {{/hasinstructions}}
-                {{/hasidentityproviders}}
             </div>
 
             <div class="col-md-5 form">
@@ -171,7 +151,7 @@
                     <script>document.getElementById('anchor').value = location.hash;</script>
                     <input type="hidden" name="logintoken" value="{{logintoken}}">
 
-                    <p class="welcome">{{#str}}login, theme_moove{{/str}}</p>
+                    <p class="welcome">Pas de compte mail scolaire&nbsp;?</p>
 
                     <label for="username" class="sr-only">
                         {{^canloginbyemail}}
@@ -207,15 +187,22 @@
                     <button type="submit" class="btn btn-primary btn-block" id="loginbtn">{{#str}}login{{/str}}</button>
                 </form>
 
-                <div class="forgetpass m-t-1">
-                    <p><a href="{{forgotpasswordurl}}">{{#str}}forgotten{{/str}}</a></p>
+                <div class="forgetpass mt-3">
+                    <p>Si vous n'utilisez pas de compte mail scolaire pour vous connecter et vous avez oublié votre nom d'utilisateur et/ou votre mot de passe, alors vous pouvez utiliser <a href="{{forgotpasswordurl}}">ce lien</a>.</p>
                 </div>
 
-                {{#cansignup}}
-                    <form class="m-t-1" action="{{signupurl}}" method="get" id="signup">
-                        <button type="submit" class="btn btn-secondary">{{#str}}startsignup{{/str}}</button>
-                    </form>
-                {{/cansignup}}
+                {{#canloginasguest}}
+                    <div>
+                        <p><i class="fa fa-user-circle-o"></i> Pour les visiteurs anonymes&nbsp;:</p>
+                        <form action="{{loginurl}}" method="post" id="guestlogin">
+                            <input type = "hidden" name = "logintoken" value = "{{logintoken}}">
+                            <input type="hidden" name="username" value="guest" />
+                            <input type="hidden" name="password" value="guest" />
+                            <input type="hidden" name="logintoken" value="{{logintoken}}">
+                            <button class="btn btn-secondary btn-block" type="submit">{{#str}}loginguest{{/str}}</button>
+                        </form>
+                    </div>
+                {{/canloginasguest}}
             </div>
         </div>
     </div>

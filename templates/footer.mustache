@@ -25,80 +25,24 @@
   <div class="container-fluid">
     <div class="row">
         <div class="col-md-7 contact">
-            <h3>{{#str}}stayintouch, theme_moove{{/str}}</h3>
-            <h4>{{{getintouchcontent}}}</h4>
+            <h3>S'inscrire à un nouveau cours ?</h3>
             <ul>
-                {{#website}}
-                    <li>
-                        <i class="slicon-globe"></i>
-                        <a href="{{{website}}}" target="_blank">{{{website}}}</a>
-                    </li>
-                {{/website}}
-                {{#mobile}}
-                    <li>
-                        <i class="slicon-phone"></i>
-                        <a href="tel:{{{mobile}}}" target="_blank">{{{mobile}}}</a>
-                    </li>
-                {{/mobile}}
-                {{#mail}}
-                    <li>
-                        <i class="slicon-envelope"></i>
-                        <a href="mailto:{{{mail}}}" target="_blank">{{{mail}}}</a>
-                    </li>
-                {{/mail}}
+                <li>
+                    <i class="slicon-graduation"></i>
+                    <a href="/course/">Rechercher un cours</a>
+                </li>
             </ul>
-        </div>
-        <div class="col-md-5 social">
-          <ul>
-              {{#facebook}}
+            <h3>Besoin d'aide ?</h3>
+            <ul>
                 <li>
-                  <a href="{{{facebook}}}" target="_blank" class="facebook btn">
-                    <i class="slicon-social-facebook"></i>
-                  </a>
+                    <i class="slicon-book-open"></i>
+                    <a href="/course/view.php?id=3">Guide enseignant</a>
                 </li>
-              {{/facebook}}
-
-              {{#twitter}}
                 <li>
-                  <a href="{{{twitter}}}" target="_blank" class="twitter btn">
-                    <i class="slicon-social-twitter"></i>
-                  </a>
+                    <i class="slicon-book-open"></i>
+                    <a href="/course/view.php?id=4">Guide étudiant</a>
                 </li>
-              {{/twitter}}
-
-              {{#linkedin}}
-                <li>
-                  <a href="{{{linkedin}}}" target="_blank" class="linkedin btn">
-                    <i class="slicon-social-linkedin"></i>
-                  </a>
-                </li>
-              {{/linkedin}}
-
-              {{#youtube}}
-                <li>
-                  <a href="{{{youtube}}}" target="_blank" class="youtube btn">
-                    <i class="slicon-social-youtube"></i>
-                  </a>
-                </li>
-              {{/youtube}}
-
-              {{#instagram}}
-                <li>
-                  <a href="{{{instagram}}}" target="_blank" class="instagram btn">
-                    <i class="slicon-social-instagram"></i>
-                  </a>
-                </li>
-              {{/instagram}}
-
-              {{#whatsapp}}
-                  <li>
-                      <a href="https://api.whatsapp.com/send?phone={{{whatsapp}}}" target="_blank" class="whatsapp btn">
-                          <i class="fa fa-whatsapp"></i>
-                      </a>
-                  </li>
-              {{/whatsapp}}
-          </ul>
-
+            </ul>
           {{{ output.standard_footer_html }}}
         </div>
     </div>
@@ -111,12 +55,16 @@
           <div id="course-footer">{{{ output.course_footer }}}</div>
 
           <div class="madewithmoodle">
-              <p>{{#str}}madewitmoodle, theme_moove{{/str}}</p>
-              <a href="https://moodle.org"><img src="{{output.get_pix_image_url_base}}/moodle-logo-white.png" alt="Moodle logo"></a>
+              <p>Plateforme développée avec</p>
+              <a href="https://moodle.org" target="_blank" rel="noopener noreferrer"><img src="{{output.get_pix_image_url_base}}/moodle-logo-white.png" alt="Moodle logo"></a>
+              <br><p>Intégrée et hébergée par <a href="https://www.pierresparta.com" target="_blank" rel="noopener noreferrer">Pierre SPARTA</a></p>
           </div>
 
           <div class="madeby">
-              <p>{{#str}}madeby, theme_moove{{/str}} <i class="text-danger fa fa-heart"></i> {{#str}}by, theme_moove{{/str}} <a href="http://conecti.me">conecti.me</a></p>
+              Enseignement Secondaire Catholique - Septembre 2020<br>
+              Administrateur : <i class="fa fa-envelope"></i>&nbsp;<a href="mailto:admin@indarlon.be" class="text-white">admin@indarlon.be</a><br>
+              Gestionnaire(s): <i class="fa fa-envelope"></i>&nbsp;<a href="mailto:manager@indarlon.be" class="text-white">manager@indarlon.be</a><br>
+              <a href="/mod/page/view.php?id=47">Mentions légales</a>
           </div>
       </div>
   </footer>

@@ -483,7 +483,7 @@ body.notloggedin {
     }
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(xs) {
     #page-site-index.notloggedin {
         .frontpage-marketing {
             padding-bottom: 0;
@@ -494,6 +494,17 @@ body.notloggedin {
                 &:last-of-type {
                     margin-bottom: 0;
                 }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    #page-site-index.notloggedin {
+        .frontpage-marketing {
+            .card {
+                flex-basis: calc(50% - 1rem);
+                margin-bottom: 1rem;
             }
         }
 

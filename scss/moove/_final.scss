@@ -1,0 +1,23 @@
+.primary {
+    color: $brand-primary;
+}
+#page-site-index.notloggedin .frontpage-maincontent h2,
+li#module-47,
+#page-site-index:not(.notloggedin) li#module-77,
+#page-site-index:not(.notloggedin) li#module-35,
+footer#page-footer div.sitelink,
+footer#page-footer div.homelink,
+footer#page-footer div.logininfo,
+div#fitem_id_moodlenetprofile,
+div#fitem_id_maildisplay,
+div#fitem_id_city,
+div#fitem_id_country,
+div#fitem_id_timezone,
+div#fitem_id_description_editor,
+div#fitem_id_imagealt,
+div#fitem_id_lang,
+fieldset#id_moodle_additional_names,
+fieldset#id_moodle_interests,
+fieldset#id_moodle_optional{
+    display:none;
+}

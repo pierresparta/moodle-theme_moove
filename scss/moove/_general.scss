@@ -59,10 +59,11 @@ body.odafont {
 Pages
 *******************/
 #page {
-    margin-top: 40px;
+    margin-top: 70px;
 
     &.container-fluid {
-        padding: 2rem;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -108,12 +109,6 @@ Card
 .card {
     border-color: $card-border-color;
     border-radius: $card-border-radius;
-
-    &.card-block,
-    .card-block,
-    .card-body {
-        padding: $m-card-padding;
-    }
 }
 
 /* Third party plugins compatibility. */
