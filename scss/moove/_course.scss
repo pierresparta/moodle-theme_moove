@@ -269,8 +269,12 @@ body#page-mod-quiz-attempt.pagelayout-secure {
     }
 
     body#page-course-view-topics,
+    body#page-course-view-collapsibletopics,
+    body#page-course-view-collapsibleweeks,
     body#page-course-view-preview {
         .course-content .topics .section,
+        .course-content .collapsibletopics .section,
+        .course-content .collapsibleweeks .section,
         .course-content .preview .section {
             padding-bottom: 0;
 
