@@ -17,9 +17,11 @@ body.coursepresentation-cover {
 }
 
 #page-course-view-topics,
+#page-course-view-collapsibletopics,
 #page-course-view-preview {
     &.editing {
         .course-content .topics .section,
+        .course-content .collapsibletopics .section,
         .course-content .preview .section {
             width: calc(100% - 20px);
         }
@@ -32,6 +34,7 @@ body.coursepresentation-cover {
 
     .course-content {
         .topics,
+        .collapsibletopics,
         .preview {
             #section-0 {
                 border: none;
@@ -44,8 +47,10 @@ body.coursepresentation-cover {
                     margin: 0;
 
                     .mod-indent-outer {
-                    	padding-left: 0;
                         display: block;
+                    }
+                    .mod-indent-outer:not(.editing) {
+                        padding-left: 0;
                     }
                 }
 
@@ -270,8 +275,10 @@ body#page-mod-quiz-attempt.pagelayout-secure {
     }
 
     body#page-course-view-topics,
+    body#page-course-view-collapsibletopics,
     body#page-course-view-preview {
         .course-content .topics .section,
+        .course-content .collapsibletopics .section,
         .course-content .preview .section {
             padding-bottom: 0;
 
