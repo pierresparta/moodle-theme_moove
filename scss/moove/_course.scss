@@ -379,3 +379,20 @@ body#page-mod-quiz-attempt.pagelayout-secure {
 .section .activity .contentafterlink {
     margin-bottom: 1rem;
 }
+
+#page-course-view-topics,
+#page-course-view-collapsibletopics,
+#page-course-view-preview {
+    :not(.editing) {
+        .course-content .topics .section,
+        .course-content .preview .section {
+            .activity.label {
+                    margin: 0;
+
+                    .mod-indent-outer {
+                        padding-left: 0;
+                    }
+            }
+        }
+    }
+}
