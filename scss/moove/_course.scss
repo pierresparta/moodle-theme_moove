@@ -382,9 +382,11 @@ body#page-mod-quiz-attempt.pagelayout-secure {
 
 #page-course-view-topics:not(.editing),
 #page-course-view-collapsibletopics:not(.editing),
+#page-course-view-collapsibleweeks:not(.editing),
 #page-course-view-preview:not(.editing) {
     .course-content .topics .section,
     .course-content .collapsibletopics .section,
+    .course-content .collapsibleweeks .section,
     .course-content .preview .section {
         .activity.label {
                 .mod-indent-outer {
