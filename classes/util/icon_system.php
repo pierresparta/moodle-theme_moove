@@ -277,7 +277,7 @@ class icon_system extends icon_system_fontawesome {
             'core:i/moremenu' => 'fa-ellipsis-h',
             'core:i/move_2d' => 'fa-arrows',
             'core:i/muted' => 'fa-microphone-slash',
-            'core:i/navigationitem' => 'slicon-options',
+            'core:i/navigationitem' => 'fa-fw',
             'core:i/ne_red_mark' => 'fa-remove',
             'core:i/new' => 'fa-bolt',
             'core:i/news' => 'fa-newspaper-o',
