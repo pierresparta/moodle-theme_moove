@@ -228,7 +228,7 @@ class icon_system extends icon_system_fontawesome {
             'core:i/emojicategorytravelplaces' => 'fa-plane',
             'core:i/edit' => 'slicon-pencil',
             'core:i/email' => 'fa-envelope',
-            'core:i/empty' => 'slicon-options',
+            'core:i/empty' => 'fa-fw',
             'core:i/enrolmentsuspended' => 'fa-pause',
             'core:i/enrolusers' => 'fa-user-plus',
             'core:i/expired' => 'slicon-exclamation text-warning',
