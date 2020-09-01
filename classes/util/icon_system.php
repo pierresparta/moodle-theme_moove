@@ -285,6 +285,7 @@ class icon_system extends icon_system_fontawesome {
             'core:i/nosubcat' => 'fa-plus-square-o',
             'core:i/notifications' => 'fa-bell',
             'core:i/open' => 'fa-folder-open',
+            'core:i/otherevent' => 'fa-calendar',
             'core:i/outcomes' => 'fa-tasks',
             'core:i/payment' => 'fa-money',
             'core:i/permissionlock' => 'fa-lock',
