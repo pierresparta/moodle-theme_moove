@@ -1,6 +1,10 @@
 .primary {
     color: $brand-primary;
 }
+.course-content ul.collapsibletopics li.section .sectionname,
+.course-content ul.collapsibleweeks li.section .sectionname {
+    color: $brand-primary;
+}
 .activity-count,
 /*#page-site-index.notloggedin .frontpage-maincontent h2,*/
 #frontpage-category-combo h2,
