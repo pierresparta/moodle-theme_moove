@@ -233,11 +233,6 @@
   }
 }
 
-@media (min-width: 576px)
-.course-content .summarytext {
-    margin: 1rem;
-}
-
 @include media-breakpoint-down(sm) {
     [class*="col-"] {
         padding-left: 0;
