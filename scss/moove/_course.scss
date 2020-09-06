@@ -256,7 +256,10 @@ body#page-course-view-preview {
     .course-content .preview .section {
         .summarytext {
             margin: 1rem;
-            padding-left: .375em;
+            padding-left: .375rem;
+        }
+        .summarytext p{
+            padding: .2em;
         }
     }
 }
@@ -307,7 +310,7 @@ body#page-course-view-preview {
 
             .summarytext {
                 margin: 1rem 0;
-                padding: .2em;
+                padding: 0rem;
             }
         }
     }
