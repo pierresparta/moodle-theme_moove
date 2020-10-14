@@ -407,6 +407,13 @@ body#page-course-view-preview {
     margin-bottom: 1rem;
 }
 
+.section .activity .contentwithoutlink.dimmed.dimmed_text {
+    display: block;
+    margin-top: .5em;
+    margin-left: 30px;
+    margin-bottom: 1rem;
+}
+
 #page-course-view-topics:not(.editing),
 #page-course-view-collapsibletopics:not(.editing),
 #page-course-view-collapsibleweeks:not(.editing),
