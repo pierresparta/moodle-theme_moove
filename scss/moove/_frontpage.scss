@@ -293,7 +293,6 @@
         }
 
         p {
-            font-size: 1.2rem;
             margin-top: 1rem;
         }
 
@@ -315,14 +314,6 @@
 
     .frontpage-sponsors {
         padding-bottom: 0;
-
-        &:before {
-            content: "";
-            display: block;
-            border-bottom: 1px solid $brand-primary;
-            width: 50%;
-            margin: 2rem auto;
-        }
 
         &:after {
             content: "";
