@@ -240,7 +240,7 @@ $string['certificates'] = 'Certificates';
 $string['certificatestitle'] = 'My certificates';
 $string['subtitleallcertificates'] = 'Certificates from all courses';
 $string['subtitlecoursecertificates'] = 'Course certificates';
-$string['nohavecertificates'] = 'You no have certificates yet';
+$string['nohavecertificates'] = 'You have no certificates yet';
 $string['coursesections'] = 'Course sections';
 
 // Mypublic page.
