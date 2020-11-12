@@ -294,6 +294,7 @@
 
         p {
             margin-top: 1rem;
+            text-align: left;
         }
 
         .row {
@@ -314,14 +315,6 @@
 
     .frontpage-sponsors {
         padding-bottom: 0;
-
-        &:after {
-            content: "";
-            display: block;
-            border-bottom: 1px solid $brand-primary;
-            width: 50%;
-            margin: 2rem auto;
-        }
     }
 
     .frontpage-clients {
