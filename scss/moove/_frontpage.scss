@@ -275,6 +275,21 @@
 
         h2 {
             color: $brand-primary;
+            text-align: center;
+            margin-bottom: 1.25rem;
+
+            &:before,
+            &:after {
+                display: inline-block;
+                content: "";
+                border-bottom: 1px solid $brand-primary;
+                border-top: 1px solid $brand-primary;
+                width: 8rem;
+                height: 5px;
+                margin: 0 .5rem;
+                vertical-align: bottom;
+                transform: translateY(-1rem);
+            }
         }
 
         p {
@@ -300,6 +315,14 @@
 
     .frontpage-sponsors {
         padding-bottom: 0;
+
+        &:before {
+            content: "";
+            display: block;
+            border-bottom: 1px solid $brand-primary;
+            width: 50%;
+            margin: 2rem auto;
+        }
 
         &:after {
             content: "";
