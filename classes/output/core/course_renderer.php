@@ -149,6 +149,9 @@ class course_renderer extends \core_course_renderer {
 
         $content .= html_writer::end_tag('div');
 
+        $content .= html_writer::start_tag('div', array('class' => 'mt-2'));
+        $content .= html_writer::end_tag('div');
+
         if (!empty($pagingbar)) {
             $content .= $pagingbar;
         }
